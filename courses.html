@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses | Stackly Coaching Centre</title>
+  <meta name="description"
+    content="Foundation, Board Prep, NEET and JEE programmes in small batches of 15 with weekly tests and a personal mentor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/courses.css">
+  <noscript>
+    <style>
+      .preloader {
+        display: none !important
+      }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <div class="preloader" id="preloader" role="status" aria-live="polite">
+    <div class="preloader__inner">
+      <img class="preloader__logo" src="assets/images/stackly.webp" alt="Stackly">
+      <div class="preloader__bar" aria-hidden="true"><span></span></div>
+      <span class="sr-only-pl"
+        style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Loading…</span>
+    </div>
+  </div>
+  <header class="nav" id="nav">
+    <a href="index.html" class="logo"><img src="assets/images/stackly-white.webp" alt="Stackly"></a>
+    <nav id="menu" aria-label="Main">
+      <a href="index.html" class="menu-logo"><img src="assets/images/stackly.webp" alt="Stackly"></a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="courses.html" class="active" aria-current="page">Courses</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="btn menu-login"><i class="fas fa-right-to-bracket"></i> Login</a>
+    </nav>
+    <a href="login.html" class="btn btn-sm nav-cta"><i class="fas fa-right-to-bracket"></i> Login</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- 1 Hero -->
+    <section class="cr-hero">
+      <div class="wrap cr-hero-grid">
+        <div class="cr-hero-copy">
+          <div class="hero-tags">
+            <nav class="hcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <i
+                class="fas fa-chevron-right"></i> <span>Courses</span></nav>
+            <span class="htag">Admissions open for 2027 batches</span>
+          </div>
+          <h1><span>Find the batch</span> <span class="on">that fits your</span> <span>year and goal.</span></h1>
+          <p class="cr-lead">Four programmes from Class 6 to NEET and JEE, each taught in a batch of 15 with a test
+            every Saturday and a mentor who knows your name.</p>
+          <div class="cta-row"><a href="#finder" class="btn">Help me choose <i class="fas fa-arrow-right"></i></a><a
+              href="#compare" class="btn btn-ghost"><i class="fas fa-scale-balanced"></i> Compare programmes</a></div>
+        </div>
+        <div class="cr-hero-art">
+          <img class="cr-hero-img" src="assets/images/image-13.webp" alt="Teacher explaining at the whiteboard"
+            fetchpriority="high">
+          <div class="cr-badge"><b>15</b><span>students per<br>batch, max</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 Finder -->
+    <section class="sec tint" id="finder">
+      <div class="wrap">
+        <p class="eyebrow" data-aos="fade-up"><span class="pip"></span> Programme Finder</p>
+        <h2 data-aos="fade-up">Which programme is right for you?</h2>
+        <div class="split cr-find">
+          <div class="cr-pick" role="group" aria-label="Choose your situation" data-aos="fade-right">
+            <button data-k="f" aria-pressed="true"><span>Class 6–8</span><i class="fas fa-arrow-right"></i></button>
+            <button data-k="b" aria-pressed="false"><span>Class 9–10, school exams</span><i
+                class="fas fa-arrow-right"></i></button>
+            <button data-k="n" aria-pressed="false"><span>Class 11–12, aiming for medicine</span><i
+                class="fas fa-arrow-right"></i></button>
+            <button data-k="j" aria-pressed="false"><span>Class 11–12, aiming for engineering</span><i
+                class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="cr-res" id="res" aria-live="polite" data-aos="fade-left">
+            <span class="cr-tag">We suggest</span>
+            <h3 id="resName">Foundation, Class 6–8</h3>
+            <p id="resText">Maths, Science and reasoning built from the basics.</p>
+            <p class="cr-pill" id="resWhen"><i class="fas fa-clock"></i> <span>Mon–Fri, 5 pm</span></p>
+            <div class="cta-row">
+              <a href="contact.html" class="btn" id="resBook" data-p="Foundation, Class 6–8">Book a free demo <i
+                  class="fas fa-arrow-right"></i></a>
+              <a href="#foundation" class="btn btn-ghost" id="resGo"><i class="fas fa-eye"></i> See details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 Programmes -->
+    <section class="sec" id="programmes">
+      <div class="wrap cr-progs">
+        <article class="cr-prog split" id="foundation">
+          <div class="cr-img"><img loading="lazy" src="assets/images/image-1.webp"
+              alt="Young students learning in class"></div>
+          <div data-aos="fade-up">
+            <span class="cr-num">01</span>
+            <h3>Foundation, Class 6–8</h3>
+            <p>Maths, Science and reasoning built from the basics, so the jump to Class 9 feels like a step, not a leap.
+            </p>
+            <ul class="ticks">
+              <li>Concept-first Maths and Science</li>
+              <li>Reasoning puzzles every week</li>
+              <li>Doubt-clearing hour after every class</li>
+            </ul>
+            <p class="cr-meta"><span><i class="fas fa-clock"></i> Mon–Fri, 5 pm</span><span><i
+                  class="fas fa-user-group"></i> Batches of 15</span></p>
+            <a href="contact.html" class="cr-more" data-p="Foundation, Class 6–8">Enquire about Foundation <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="cr-prog split rev" id="boards">
+          <div class="cr-img"><img loading="lazy" src="assets/images/image-3.webp"
+              alt="Classroom during a Board Prep session"></div>
+          <div data-aos="fade-up">
+            <span class="cr-num">02</span>
+            <h3>Board Prep, Class 9–12</h3>
+            <p>Syllabus plus past-paper practice for every subject, with a one-page summary after each concept class.
+            </p>
+            <ul class="ticks">
+              <li>Past-paper practice for every subject</li>
+              <li>Saturday paper, marked by Sunday</li>
+              <li>Same-day answer review</li>
+            </ul>
+            <p class="cr-meta"><span><i class="fas fa-clock"></i> Mon–Sat, 6 am or 5 pm</span><span><i
+                  class="fas fa-user-group"></i> Batches of 15</span></p>
+            <a href="contact.html" class="cr-more" data-p="Board Prep, Class 9–12">Enquire about Board Prep <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="cr-prog split" id="neet">
+          <div class="cr-img"><img loading="lazy" src="assets/images/image-8.webp" alt="Student preparing for NEET">
+          </div>
+          <div data-aos="fade-up">
+            <span class="cr-num">03</span>
+            <h3>NEET Two-Year</h3>
+            <p>Biology, Physics and Chemistry with an all-India test series, taught by the teachers who stay after
+              class.</p>
+            <ul class="ticks">
+              <li>Line-by-line NCERT Biology</li>
+              <li>All-India test series</li>
+              <li>Saturday paper, marked by Sunday</li>
+            </ul>
+            <p class="cr-meta"><span><i class="fas fa-clock"></i> Daily, 7 am</span><span><i
+                  class="fas fa-user-group"></i> Batches of 15</span></p>
+            <a href="contact.html" class="cr-more" data-p="NEET Two-Year">Enquire about NEET <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="cr-prog split rev" id="jee">
+          <div class="cr-img"><img loading="lazy" src="assets/images/image-10.webp" alt="Student solving a problem set">
+          </div>
+          <div data-aos="fade-up">
+            <span class="cr-num">04</span>
+            <h3>JEE Main + Advanced</h3>
+            <p>Problem-solving labs and weekly timed papers that build speed along with understanding.</p>
+            <ul class="ticks">
+              <li>Friday problem lab with a mentor beside you</li>
+              <li>Weekly timed papers</li>
+              <li>Sunday review: every lost mark gets a plan</li>
+            </ul>
+            <p class="cr-meta"><span><i class="fas fa-clock"></i> Daily, 7 am</span><span><i
+                  class="fas fa-user-group"></i> Batches of 15</span></p>
+            <a href="contact.html" class="cr-more" data-p="JEE Main + Advanced">Enquire about JEE <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4 Compare -->
+    <section class="sec tint" id="compare">
+      <div class="wrap">
+        <p class="eyebrow" data-aos="fade-up"><span class="pip"></span> All programmes</p>
+        <h2 data-aos="fade-up">Compare at a glance</h2>
+        <p class="cr-cmp-lead" data-aos="fade-up">Same batch size and mentor system across every programme — pick by
+          your year and goal.</p>
+
+        <div class="cr-cmp-grid" data-aos="fade-up">
+
+          <!-- Foundation -->
+          <div class="cr-cmp-col">
+            <div class="cr-cmp-head cr-cmp-f">
+              <span class="cr-cmp-num">01</span>
+              <i class="fas fa-seedling"></i>
+              <h3>Foundation</h3>
+              <p class="cr-cmp-for">Class 6–8</p>
+            </div>
+            <ul class="cr-cmp-specs">
+              <li><i class="fas fa-book"></i><span><b>Subjects</b>Maths, Science, reasoning</span></li>
+              <li><i class="fas fa-clock"></i><span><b>Timing</b>Mon–Fri, 5 pm</span></li>
+              <li><i class="fas fa-pen-ruler"></i><span><b>Practice</b>Reasoning puzzles</span></li>
+              <li><i class="fas fa-user-group"></i><span><b>Batch size</b>15 maximum</span></li>
+              <li><i class="fas fa-user-tie"></i><span><b>Mentor</b>Personal mentor</span></li>
+            </ul>
+            <a href="404.html" class="cr-cmp-btn" data-p="Foundation, Class 6–8">Enquire <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Board Prep -->
+          <div class="cr-cmp-col">
+            <div class="cr-cmp-head cr-cmp-b">
+              <span class="cr-cmp-num">02</span>
+              <i class="fas fa-school"></i>
+              <h3>Board Prep</h3>
+              <p class="cr-cmp-for">Class 9–12</p>
+            </div>
+            <ul class="cr-cmp-specs">
+              <li><i class="fas fa-book"></i><span><b>Subjects</b>Every school subject</span></li>
+              <li><i class="fas fa-clock"></i><span><b>Timing</b>Mon–Sat, 6 am or 5 pm</span></li>
+              <li><i class="fas fa-pen-ruler"></i><span><b>Practice</b>Past papers</span></li>
+              <li><i class="fas fa-user-group"></i><span><b>Batch size</b>15 maximum</span></li>
+              <li><i class="fas fa-user-tie"></i><span><b>Mentor</b>Personal mentor</span></li>
+            </ul>
+            <a href="404.html" class="cr-cmp-btn" data-p="Board Prep, Class 9–12">Enquire <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+
+          <!-- NEET -->
+          <div class="cr-cmp-col cr-cmp-featured">
+            <span class="cr-cmp-badge">Popular</span>
+            <div class="cr-cmp-head cr-cmp-n">
+              <span class="cr-cmp-num">03</span>
+              <i class="fas fa-dna"></i>
+              <h3>NEET Two-Year</h3>
+              <p class="cr-cmp-for">NEET aspirants</p>
+            </div>
+            <ul class="cr-cmp-specs">
+              <li><i class="fas fa-book"></i><span><b>Subjects</b>Biology, Physics, Chemistry</span></li>
+              <li><i class="fas fa-clock"></i><span><b>Timing</b>Daily, 7 am</span></li>
+              <li><i class="fas fa-pen-ruler"></i><span><b>Practice</b>All-India test series</span></li>
+              <li><i class="fas fa-user-group"></i><span><b>Batch size</b>15 maximum</span></li>
+              <li><i class="fas fa-user-tie"></i><span><b>Mentor</b>Personal mentor</span></li>
+            </ul>
+            <a href="404.html" class="cr-cmp-btn" data-p="NEET Two-Year">Enquire <i class="fas fa-arrow-right"></i></a>
+          </div>
+
+          <!-- JEE -->
+          <div class="cr-cmp-col">
+            <div class="cr-cmp-head cr-cmp-j">
+              <span class="cr-cmp-num">04</span>
+              <i class="fas fa-atom"></i>
+              <h3>JEE Main + Advanced</h3>
+              <p class="cr-cmp-for">JEE aspirants</p>
+            </div>
+            <ul class="cr-cmp-specs">
+              <li><i class="fas fa-book"></i><span><b>Subjects</b>Maths, Physics, Chemistry</span></li>
+              <li><i class="fas fa-clock"></i><span><b>Timing</b>Daily, 7 am</span></li>
+              <li><i class="fas fa-pen-ruler"></i><span><b>Practice</b>Weekly timed papers</span></li>
+              <li><i class="fas fa-user-group"></i><span><b>Batch size</b>15 maximum</span></li>
+              <li><i class="fas fa-user-tie"></i><span><b>Mentor</b>Personal mentor</span></li>
+            </ul>
+            <a href="404.html" class="cr-cmp-btn" data-p="JEE Main + Advanced">Enquire <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 Included -->
+    <section class="sec cr-inc-sec" id="included">
+      <div class="wrap">
+        <div class="cr-inc-layout">
+
+          <!-- Left: sticky headline + stat -->
+          <div class="cr-inc-left" data-aos="fade-right">
+            <p class="eyebrow"><span class="pip"></span> What you get</p>
+            <h2>Included in every batch</h2>
+            <p class="cr-inc-sub">Every student, every programme — these six things come standard, from day one.</p>
+            <div class="cr-inc-stat">
+              <strong>6</strong>
+              <span>features included</span>
+            </div>
+            <a href="contact.html" class="btn">Book a free demo <i class="fas fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Right: feature grid -->
+          <div class="cr-inc-right" data-aos="fade-left">
+
+            <div class="cr-inc-item">
+              <div class="cr-inc-icon ci-teal"><i class="fas fa-comments"></i></div>
+              <div>
+                <h3>Doubt-clearing hour</h3>
+                <p>Every class ends with time for questions, answered in the room and not in a queue.</p>
+              </div>
+            </div>
+
+            <div class="cr-inc-item">
+              <div class="cr-inc-icon ci-amber"><i class="fas fa-clipboard-check"></i></div>
+              <div>
+                <h3>Weekly test</h3>
+                <p>A paper in exam conditions each Saturday, with same-day answer review.</p>
+              </div>
+            </div>
+
+            <div class="cr-inc-item">
+              <div class="cr-inc-icon ci-teal"><i class="fas fa-file-lines"></i></div>
+              <div>
+                <h3>Printed progress sheet</h3>
+                <p>See exactly where marks are gained and lost, chapter by chapter.</p>
+              </div>
+            </div>
+
+            <div class="cr-inc-item">
+              <div class="cr-inc-icon ci-amber"><i class="fas fa-phone"></i></div>
+              <div>
+                <h3>A mentor who calls home</h3>
+                <p>If a score slips, a parent hears from us — plus a monthly update.</p>
+              </div>
+            </div>
+
+            <div class="cr-inc-item">
+              <div class="cr-inc-icon ci-teal"><i class="fas fa-language"></i></div>
+              <div>
+                <h3>Bilingual teaching</h3>
+                <p>Concepts in English and Tamil, so nothing is lost in translation.</p>
+              </div>
+            </div>
+
+            <div class="cr-inc-item">
+              <div class="cr-inc-icon ci-amber"><i class="fas fa-user-group"></i></div>
+              <div>
+                <h3>Batches of 15</h3>
+                <p>Small enough that nobody hides at the back of the room.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 Admissions -->
+    <section class="sec cr-adm cr-adm-blush" id="admission">
+      <div class="wrap split">
+        <div class="cr-sticky" data-aos="fade-right">
+          <p class="eyebrow"><span class="pip"></span> Admission Process</p>
+          <h2>How admission works</h2>
+          <p>Four simple steps, and the first one is free. There is no entrance pressure, only a conversation about
+            where your child stands.</p>
+        </div>
+        <ol class="cr-steps">
+          <li><small>Step 1</small>
+            <h3>Book a demo class</h3>
+            <p>Sit in on a real class and meet the teacher, at no cost.</p>
+          </li>
+          <li><small>Step 2</small>
+            <h3>Meet your mentor</h3>
+            <p>A friendly chat to see where the student is strong and where help is needed.</p>
+          </li>
+          <li><small>Step 3</small>
+            <h3>Get your batch</h3>
+            <p>We place your child in a batch of 15 that suits their timing and goal.</p>
+          </li>
+          <li><small>Step 4</small>
+            <h3>Take the first Saturday test</h3>
+            <p>It sets the baseline. From there, every lost mark gets a plan.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="sec" id="faq">
+      <div class="wrap split cr-faqwrap">
+        <div class="cr-sticky" data-aos="fade-right">
+          <p class="eyebrow"><span class="pip"></span> Common Queries</p>
+          <h2>Questions parents ask</h2>
+          <p class="cr-fp">Not here? Call us or ask at your demo class.</p>
+          <div class="cr-ask">
+            <span class="cr-ask-ic"><i class="fas fa-headset"></i></span>
+            <div>
+              <h3>Still have a question?</h3>
+              <p>Sit in on a free demo class and ask our mentors directly.</p>
+              <a href="contact.html" class="cr-more">Book a demo class <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="cr-faq" data-aos="fade-left">
+          <div class="crow on"><button aria-expanded="true">How are batches formed<i></i></button>
+            <div class="cbody">
+              <div>
+                <p>By class and goal, capped at 15 students, so every student gets noticed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="crow"><button aria-expanded="false">Can my child switch programmes?<i></i></button>
+            <div class="cbody">
+              <div>
+                <p>Yes. Talk to your mentor and we will move the student when another programme fits better.</p>
+              </div>
+            </div>
+          </div>
+          <div class="crow"><button aria-expanded="false">What if a class is missed?<i></i></button>
+            <div class="cbody">
+              <div>
+                <p>Each concept class comes with a one-page summary, and the doubt hour covers what was missed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="crow"><button aria-expanded="false">How will I know how my child is doing?<i></i></button>
+            <div class="cbody">
+              <div>
+                <p>Through the printed progress sheet, a monthly parent update and a call from the mentor if a score
+                  slips.</p>
+              </div>
+            </div>
+          </div>
+          <div class="crow"><button aria-expanded="false">What are the fees?<i></i></button>
+            <div class="cbody">
+              <div>
+                <p>Fees depend on the programme. We share the full fee sheet at the demo class.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 CTA banner with background image -->
+    <section class="cr-banner" aria-labelledby="bannerH">
+      <div class="wrap">
+        <div class="cr-banner-in" data-aos="fade-up">
+          <p class="eyebrow"><span class="pip"></span> Free demo class</p>
+          <h2 id="bannerH">Your child's next big result starts with one class</h2>
+          <p>Meet our mentors, see a real batch in action and decide with confidence. Small batches of 15, no fees, no
+            pressure.</p>
+          <div class="cr-banner-btns">
+            <a href="contact.html" class="btn">Book a free demo <i class="fas fa-arrow-right"></i></a>
+            <a href="#compare" class="cr-ghost">Compare programmes <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="fgrid">
+        <div><a href="index.html" class="logo"><img src="assets/images/stackly-white.webp" alt="Stackly"></a>
+          <p>Small-batch coaching for Class 6–12, NEET and JEE, run from Salem, Tamil Nadu.</p>
+          <div class="fsocial">
+            <a href="404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="404.html" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="404.html" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <nav aria-label="Quick links">
+          <h4>Explore</h4>
+          <a href="index.html"> <i class="fas fa-chevron-right"></i> Home</a>
+          <a href="about.html"> <i class="fas fa-chevron-right"></i> About Us</a>
+          <a href="courses.html"> <i class="fas fa-chevron-right"></i> Courses</a>
+          <a href="blog.html"> <i class="fas fa-chevron-right"></i> Blog</a>
+          <a href="contact.html"> <i class="fas fa-chevron-right"></i> Contact</a>
+        </nav>
+        <nav aria-label="Programmes">
+          <h4>Programmes</h4>
+          <a href="404.html"> <i class="fas fa-chevron-right"></i> Foundation, 6–8</a>
+          <a href="404.html"> <i class="fas fa-chevron-right"></i> Board Prep, 9–12</a>
+          <a href="404.html"> <i class="fas fa-chevron-right"></i> NEET Two-Year</a>
+          <a href="404.html"> <i class="fas fa-chevron-right"></i> JEE Main + Advanced</a>
+          <a href="404.html"> <i class="fas fa-chevron-right"></i> Foundation Maths</a>
+        </nav>
+        <address>
+          <h4>Visit us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Salem, Tamil Nadu, India<br>
+            <i class="fas fa-envelope"></i> info@thestackly.com<br>
+            <i class="fas fa-clock"></i> Mon–Sat, 6 am – 8 pm
+          </p>
+        </address>
+      </div>
+      <div class="fbot">
+        <p>© 2026 Stackly. All rights reserved.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/courses.js"></script>
+</body>
+
+</html>

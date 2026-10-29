@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Sign up | Stackly Coaching Centre</title>
+  <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body class="auth-body">
+<div class="auth">
+  <aside class="auth-art">
+    <div class="arch"><img src="assets/images/image-12.webp" alt="Students studying together in a coaching class"></div>
+    <p class="q">Batches of 15, a test every Saturday and a mentor who notices you.</p>
+  </aside>
+  <div class="auth-main">
+    <div class="auth-top"><a href="index.html" class="logo"><img src="assets/images/stackly.webp" alt="Stackly"></a><a href="index.html" class="back"><i class="fas fa-arrow-left"></i> Back to home</a></div>
+    <div class="auth-card">
+      <h1>Create your account</h1>
+      <p class="sub">Takes a minute. Then log in to your dashboard.</p>
+      <form id="signup" novalidate>
+        <label>Student name<input name="name" autocomplete="name" data-rule="name" aria-describedby="e-name"></label>
+        <small class="err" id="e-name"></small>
+        <label>Email address<input name="email" type="email" autocomplete="email" data-rule="email" aria-describedby="e-email" placeholder="you@example.com"></label>
+        <small class="err" id="e-email"></small>
+        <label>Phone number<input name="phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel-national" data-rule="phone" aria-describedby="e-phone" placeholder="10 digits"></label>
+        <small class="err" id="e-phone"></small>
+        <label>Password
+          <span class="pw"><input name="password" type="password" autocomplete="new-password" data-rule="password" aria-describedby="e-password"><button type="button" class="eye" data-eye aria-label="Show password"><i class="fas fa-eye"></i></button></span>
+        </label>
+        <small class="err" id="e-password">&nbsp;</small>
+        <label>Confirm password
+          <span class="pw"><input name="confirm" type="password" autocomplete="new-password" data-rule="confirm" aria-describedby="e-confirm"><button type="button" class="eye" data-eye aria-label="Show password"><i class="fas fa-eye"></i></button></span>
+        </label>
+        <small class="err" id="e-confirm"></small>
+        <label class="chk"><input name="terms" type="checkbox" data-rule="terms" aria-describedby="e-terms"><span>I agree to the <a href="404.html">terms</a> and <a href="404.html">privacy policy</a>.</span></label>
+        <small class="err" id="e-terms"></small>
+        <button class="btn" type="submit" id="sub-btn">Create account <i class="fas fa-user-plus"></i></button>
+        <p class="okmsg" id="ok" role="status" hidden></p>
+      </form>
+      <p class="swap">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="assets/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <title>Student dashboard | Stackly</title>
+</head>
+<body>
+<div class="dash">
+  <aside class="side" id="side" aria-label="Dashboard sidebar">
+    <a href="student-dashboard.html" class="logo"><img src="assets/images/stackly-white.webp" alt="Stackly"></a>
+    <p class="role">Student dashboard</p>
+    <nav class="menu" aria-label="Dashboard menu">
+      <button data-go="overview"><i class="fas fa-gauge"></i> Overview</button>
+      <button data-go="courses"><i class="fas fa-book-open"></i> My courses</button>
+      <button data-go="tests"><i class="fas fa-clipboard-check"></i> Tests &amp; results</button>
+      <button data-go="account"><i class="fas fa-wallet"></i> Fees &amp; profile</button>
+    </nav>
+    <div class="side-foot">
+      <a href="index.html"><i class="fas fa-house"></i> Back to home</a>
+      <a href="login.html"><i class="fas fa-right-from-bracket"></i> Logout</a>
+    </div>
+  </aside>
+  <div class="shade" id="shade"></div>
+  <div class="main">
+    <header class="top">
+      <button class="dburger" id="dburger" aria-label="Open menu" aria-expanded="false" aria-controls="side"><i class="fas fa-bars"></i></button>
+      <h1 id="ptitle">Overview</h1>
+      <div class="who"><i class="fas fa-user"></i><span id="who">Guest (not logged in)</span></div>
+    </header>
+    <main class="page">
+<section class="panel" id="overview" data-title="Overview">
+  <div class="blk hi">
+    <h2>Ready for Saturday's test?</h2>
+    <p>Your batch has a Physics paper on 7 November. Revise the one-page summaries and bring your doubts to Friday's lab.</p>
+    <a href="404.html" class="btn btn-sm">View test syllabus</a>
+    <div class="kpis">
+      <div class="kpi"><strong data-n="92" data-s="%">92%</strong><span>Attendance this term</span></div>
+      <div class="kpi"><strong data-n="78" data-s="%">78%</strong><span>Average test score</span></div>
+      <div class="kpi"><strong data-n="4" data-p="#">#4</strong><span>Rank in your batch</span></div>
+      <div class="kpi"><strong data-n="18">18</strong><span>Tests taken</span></div>
+    </div>
+  </div>
+  <div class="blk"><h2>Today's classes</h2>
+    <ul class="ls">
+      <li><div><b>Physics: Rotational Motion</b><small>7:00 am · Dr. Meena Raghavan</small></div><span class="tag">Attended</span></li>
+      <li><div><b>Chemistry: Chemical Bonding</b><small>5:00 pm · Priya Lakshmi</small></div><span class="tag amb">Upcoming</span></li>
+      <li><div><b>Doubt-clearing hour</b><small>6:30 pm · Room 2</small></div><a href="404.html" class="btn btn-sm btn-ghost">Add a doubt</a></li>
+    </ul></div>
+  <div class="blk"><h2>Mentor notes</h2>
+    <ul class="ls">
+      <li><div><b>Focus on numericals this week</b><small>Priya Lakshmi · 2 days ago</small></div><a href="404.html" class="btn btn-sm btn-ghost">Read note</a></li>
+      <li><div><b>Parent meeting on 25 October</b><small>Front office · 5 days ago</small></div><a href="404.html" class="btn btn-sm btn-ghost">Confirm slot</a></li>
+    </ul></div>
+</section>
+
+<section class="panel" id="courses" data-title="My courses">
+  <div class="blk"><h2>Enrolled programmes</h2>
+    <div class="cols">
+      <div class="cc"><span class="ic"><i class="fas fa-dna"></i></span><h3>NEET Two-Year</h3><p>Biology, Physics and Chemistry. Daily, 7 am.</p><div class="brow"><p>Syllabus covered <em>64%</em></p><div class="bar"><i style="--w:64%"></i></div></div><a href="404.html" class="btn btn-sm">Open course</a></div>
+      <div class="cc"><span class="ic"><i class="fas fa-school"></i></span><h3>Board Prep, Class 12</h3><p>Syllabus plus past-paper practice. Mon–Sat, 5 pm.</p><div class="brow"><p>Syllabus covered <em>48%</em></p><div class="bar am"><i style="--w:48%"></i></div></div><a href="404.html" class="btn btn-sm">Open course</a></div>
+    </div></div>
+  <div class="blk"><h2>Study materials</h2>
+    <ul class="ls">
+      <li><div><b>Rotational Motion: one-page summary</b><small>Physics · PDF</small></div><a href="404.html" class="btn btn-sm btn-ghost">Download</a></li>
+      <li><div><b>Chemical Bonding: practice set</b><small>Chemistry · 40 questions</small></div><a href="404.html" class="btn btn-sm btn-ghost">Download</a></li>
+      <li><div><b>Human Physiology: diagram pack</b><small>Biology · PDF</small></div><a href="404.html" class="btn btn-sm btn-ghost">Download</a></li>
+    </ul></div>
+  <div class="blk"><h2>Doubt-clearing sessions</h2>
+    <p>Every class is followed by a doubt hour. Send your question early so your mentor can prepare.</p>
+    <ul class="ls" style="margin-top:1rem">
+      <li><div><b>Physics doubts</b><small>Fri, 6:30 pm · Room 2</small></div><a href="404.html" class="btn btn-sm">Ask a doubt</a></li>
+      <li><div><b>Biology doubts</b><small>Sat, 6:30 pm · Room 1</small></div><a href="404.html" class="btn btn-sm">Ask a doubt</a></li>
+    </ul></div>
+</section>
+
+<section class="panel" id="tests" data-title="Tests &amp; results">
+  <div class="blk"><h2>Upcoming tests</h2>
+    <ul class="ls">
+      <li><div><b>Physics weekly paper</b><small>Sat, 17 Oct · 9:00 am · 60 marks</small></div><span class="tag amb">In 3 days</span></li>
+      <li><div><b>Chemistry unit test</b><small>Sat, 24 Oct · 9:00 am · 40 marks</small></div><span class="tag">Scheduled</span></li>
+      <li><div><b>NEET all-India mock</b><small>Sun, 1 Nov · 10:00 am · 720 marks</small></div><a href="404.html" class="btn btn-sm btn-ghost">View details</a></li>
+    </ul></div>
+  <div class="blk"><h2>Recent scores</h2>
+    <div class="chart" role="img" aria-label="Scores for the last six tests: 64, 70, 68, 76, 81, 85 percent">
+      <div><b>64</b><i style="--h:64%"></i><span>T1</span></div><div><b>70</b><i style="--h:70%"></i><span>T2</span></div><div><b>68</b><i style="--h:68%"></i><span>T3</span></div><div><b>76</b><i style="--h:76%"></i><span>T4</span></div><div><b>81</b><i style="--h:81%"></i><span>T5</span></div><div><b>85</b><i style="--h:85%"></i><span>T6</span></div>
+    </div>
+    <p class="note2">Percentage scored in your last six Saturday papers.</p>
+    <a href="404.html" class="btn btn-sm" style="margin-top:1rem">Download report card</a></div>
+  <div class="blk"><h2>Subject strengths</h2>
+    <div class="brow"><p>Biology <em>88%</em></p><div class="bar"><i style="--w:88%"></i></div></div>
+    <div class="brow"><p>Chemistry <em>74%</em></p><div class="bar"><i style="--w:74%"></i></div></div>
+    <div class="brow"><p>Physics <em>61%</em></p><div class="bar am"><i style="--w:61%"></i></div></div>
+    <a href="404.html" class="btn btn-sm btn-ghost" style="margin-top:1rem">Get a practice plan</a></div>
+</section>
+
+<section class="panel" id="account" data-title="Fees &amp; profile">
+  <div class="blk"><h2>Student profile</h2>
+    <dl class="dl"><div><dt>Programme</dt><dd>NEET Two-Year</dd></div><div><dt>Batch</dt><dd>NEET-B2 · 15 students</dd></div><div><dt>Mentor</dt><dd>Priya Lakshmi</dd></div><div><dt>Language</dt><dd>English and Tamil</dd></div></dl>
+    <a href="404.html" class="btn btn-sm" style="margin-top:1.4rem">Edit profile</a></div>
+  <div class="blk"><h2>Fee status</h2>
+    <div class="brow"><p>Paid so far <em>₹ 60,000 of ₹ 90,000</em></p><div class="bar"><i style="--w:67%"></i></div></div>
+    <ul class="ls" style="margin-top:1rem">
+      <li><div><b>Instalment 3</b><small>Due 30 October · ₹ 15,000</small></div><a href="404.html" class="btn btn-sm">Pay now</a></li>
+      <li><div><b>Instalment 2 receipt</b><small>Paid 30 July · ₹ 15,000</small></div><a href="404.html" class="btn btn-sm btn-ghost">Receipt</a></li>
+    </ul></div>
+  <div class="blk"><h2>Parent updates and support</h2>
+    <p>Parents get a monthly progress sheet. Need help with timings, fees or a leave request? The front office replies within one working day.</p>
+    <div class="cta-row" style="margin-top:1.2rem"><a href="404.html" class="btn btn-sm">Request leave</a><a href="404.html" class="btn btn-sm btn-ghost">Contact front office</a></div></div>
+</section>
+</main>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <title>Admin dashboard | Stackly</title>
+</head>
+<body>
+<div class="dash">
+  <aside class="side" id="side" aria-label="Dashboard sidebar">
+    <a href="admin-dashboard.html" class="logo"><img src="assets/images/stackly-white.webp" alt="Stackly"></a>
+    <p class="role">Admin dashboard</p>
+    <nav class="menu" aria-label="Dashboard menu">
+      <button data-go="overview"><i class="fas fa-gauge"></i> Overview</button>
+      <button data-go="students"><i class="fas fa-user-graduate"></i> Students</button>
+      <button data-go="batches"><i class="fas fa-people-group"></i> Batches</button>
+      <button data-go="enquiries"><i class="fas fa-envelope-open-text"></i> Enquiries &amp; fees</button>
+    </nav>
+    <div class="side-foot">
+      <a href="index.html"><i class="fas fa-house"></i> Back to home</a>
+      <a href="login.html"><i class="fas fa-right-from-bracket"></i> Logout</a>
+    </div>
+  </aside>
+  <div class="shade" id="shade"></div>
+  <div class="main">
+    <header class="top">
+      <button class="dburger" id="dburger" aria-label="Open menu" aria-expanded="false" aria-controls="side"><i class="fas fa-bars"></i></button>
+      <h1 id="ptitle">Overview</h1>
+      <div class="who"><i class="fas fa-user"></i><span id="who">Guest (not logged in)</span></div>
+    </header>
+    <main class="page">
+<section class="panel" id="overview" data-title="Overview">
+  <div class="blk hi">
+    <h2>Admissions are open for 2027</h2>
+    <p>14 new enquiries came in this week and 3 batches are nearly full. Review them before Friday.</p>
+    <a href="404.html" class="btn btn-sm">Review enquiries</a>
+    <div class="kpis">
+      <div class="kpi"><strong data-n="1240">1,240</strong><span>Students enrolled</span></div>
+      <div class="kpi"><strong data-n="38">38</strong><span>Active batches</span></div>
+      <div class="kpi"><strong data-n="14">14</strong><span>New enquiries this week</span></div>
+      <div class="kpi"><strong data-n="19" data-p="₹ " data-s=" L">₹ 19 L</strong><span>Fees collected this month</span></div>
+    </div>
+  </div>
+  <div class="blk"><h2>New admissions by month</h2>
+    <div class="chart" role="img" aria-label="Admissions from May to October: 22, 31, 45, 38, 52, 41">
+      <div><b>22</b><i style="--h:42%"></i><span>May</span></div><div><b>31</b><i style="--h:60%"></i><span>Jun</span></div><div><b>45</b><i style="--h:86%"></i><span>Jul</span></div><div><b>38</b><i style="--h:73%"></i><span>Aug</span></div><div><b>52</b><i style="--h:100%"></i><span>Sep</span></div><div><b>41</b><i style="--h:79%"></i><span>Oct</span></div>
+    </div>
+    <a href="404.html" class="btn btn-sm btn-ghost" style="margin-top:1rem">Export report</a></div>
+  <div class="blk"><h2>Recent activity</h2>
+    <ul class="ls">
+      <li><div><b>Anitha R. joined NEET-B3</b><small>Today, 9:40 am</small></div><span class="tag">Admission</span></li>
+      <li><div><b>Fee of ₹ 15,000 received</b><small>Today, 8:15 am · Rahul M.</small></div><span class="tag">Payment</span></li>
+      <li><div><b>JEE-B1 timetable updated</b><small>Yesterday · Arun Kumar</small></div><span class="tag amb">Schedule</span></li>
+    </ul></div>
+</section>
+
+<section class="panel" id="students" data-title="Students">
+  <div class="blk"><h2>Student summary</h2>
+    <div class="kpis" style="margin-top:0">
+      <div class="kpi"><strong>1,240</strong><span>Total students</span></div>
+      <div class="kpi"><strong>41</strong><span>Joined this month</span></div>
+      <div class="kpi"><strong>9</strong><span>Pending admissions</span></div>
+      <div class="kpi"><strong>94%</strong><span>Average attendance</span></div>
+    </div></div>
+  <div class="blk"><h2>Recently added students</h2>
+    <ul class="ls">
+      <li><div><b>Anitha R.</b><small>NEET Two-Year · NEET-B3</small></div><a href="404.html" class="btn btn-sm btn-ghost">View profile</a></li>
+      <li><div><b>Rahul M.</b><small>JEE Main + Advanced · JEE-B1</small></div><a href="404.html" class="btn btn-sm btn-ghost">View profile</a></li>
+      <li><div><b>Divya S.</b><small>Board Prep, Class 10 · BP-B4</small></div><a href="404.html" class="btn btn-sm btn-ghost">View profile</a></li>
+      <li><div><b>Karan V.</b><small>Foundation, Class 7 · FD-B2</small></div><a href="404.html" class="btn btn-sm btn-ghost">View profile</a></li>
+    </ul>
+    <a href="404.html" class="btn btn-sm" style="margin-top:1.2rem">Add a student</a></div>
+  <div class="blk"><h2>Pending approvals</h2>
+    <ul class="ls">
+      <li><div><b>Meera K.</b><small>Applied for NEET Two-Year · documents uploaded</small></div><a href="404.html" class="btn btn-sm">Approve</a></li>
+      <li><div><b>Suresh P.</b><small>Applied for JEE Main + Advanced · fee pending</small></div><a href="404.html" class="btn btn-sm">Approve</a></li>
+      <li><div><b>Lavanya T.</b><small>Applied for Board Prep, Class 11</small></div><a href="404.html" class="btn btn-sm">Approve</a></li>
+    </ul></div>
+</section>
+
+<section class="panel" id="batches" data-title="Batches">
+  <div class="blk"><h2>Batch seats (maximum 15)</h2>
+    <div class="cols">
+      <div class="cc"><span class="ic"><i class="fas fa-dna"></i></span><h3>NEET-B3</h3><p>Daily, 7 am · Dr. Meena Raghavan</p><div class="brow"><p>Seats filled <em>15 / 15</em></p><div class="bar am"><i style="--w:100%"></i></div></div><a href="404.html" class="btn btn-sm">Manage batch</a></div>
+      <div class="cc"><span class="ic"><i class="fas fa-atom"></i></span><h3>JEE-B1</h3><p>Daily, 7 am · Arun Kumar</p><div class="brow"><p>Seats filled <em>12 / 15</em></p><div class="bar"><i style="--w:80%"></i></div></div><a href="404.html" class="btn btn-sm">Manage batch</a></div>
+      <div class="cc"><span class="ic"><i class="fas fa-school"></i></span><h3>BP-B4</h3><p>Mon–Sat, 5 pm · Priya Lakshmi</p><div class="brow"><p>Seats filled <em>9 / 15</em></p><div class="bar"><i style="--w:60%"></i></div></div><a href="404.html" class="btn btn-sm">Manage batch</a></div>
+    </div></div>
+  <div class="blk"><h2>Faculty</h2>
+    <ul class="ls">
+      <li><div><b>Dr. Meena Raghavan</b><small>Physics, Class 11–12 and NEET</small></div><span class="tag">14 years</span></li>
+      <li><div><b>Arun Kumar</b><small>Mathematics, JEE and Boards</small></div><span class="tag">11 years</span></li>
+      <li><div><b>Priya Lakshmi</b><small>Biology and Chemistry, NEET</small></div><span class="tag">9 years</span></li>
+      <li><div><b>Karthik S.</b><small>Foundation Maths and Science</small></div><span class="tag">7 years</span></li>
+    </ul>
+    <a href="404.html" class="btn btn-sm" style="margin-top:1.2rem">Add faculty</a></div>
+  <div class="blk"><h2>This week's timetable</h2>
+    <ul class="ls">
+      <li><div><b>Mon–Thu · Concept classes</b><small>7:00 am and 5:00 pm</small></div><span class="tag">Learn</span></li>
+      <li><div><b>Friday · Problem lab</b><small>5:00 pm · mentors on the floor</small></div><span class="tag">Practise</span></li>
+      <li><div><b>Saturday · Weekly test</b><small>9:00 am · all batches</small></div><span class="tag amb">Test</span></li>
+      <li><div><b>Sunday · Review</b><small>10:00 am · answer discussion</small></div><span class="tag">Fix</span></li>
+    </ul>
+    <a href="404.html" class="btn btn-sm btn-ghost" style="margin-top:1.2rem">Edit timetable</a></div>
+</section>
+
+<section class="panel" id="enquiries" data-title="Enquiries &amp; fees">
+  <div class="blk"><h2>New enquiries</h2>
+    <ul class="ls">
+      <li><div><b>Vignesh A.</b><small>Demo class for JEE · requested today</small></div><a href="404.html" class="btn btn-sm">Call back</a></li>
+      <li><div><b>Parent of Sneha R.</b><small>Demo class for Foundation · requested yesterday</small></div><a href="404.html" class="btn btn-sm">Call back</a></li>
+      <li><div><b>Mohan D.</b><small>Demo class for NEET · requested 2 days ago</small></div><a href="404.html" class="btn btn-sm">Call back</a></li>
+    </ul></div>
+  <div class="blk"><h2>Fee collection by programme</h2>
+    <div class="brow"><p>NEET Two-Year <em>82%</em></p><div class="bar"><i style="--w:82%"></i></div></div>
+    <div class="brow"><p>JEE Main + Advanced <em>74%</em></p><div class="bar"><i style="--w:74%"></i></div></div>
+    <div class="brow"><p>Board Prep <em>91%</em></p><div class="bar"><i style="--w:91%"></i></div></div>
+    <div class="brow"><p>Foundation <em>58%</em></p><div class="bar am"><i style="--w:58%"></i></div></div>
+    <a href="404.html" class="btn btn-sm btn-ghost" style="margin-top:1rem">Send fee reminders</a></div>
+  <div class="blk"><h2>Announcements</h2>
+    <p>Share holidays, test changes and parent meetings with every batch at once.</p>
+    <ul class="ls" style="margin-top:1rem">
+      <li><div><b>Diwali holiday: 8 to 10 November</b><small>Sent to all batches · 3 days ago</small></div><span class="tag">Sent</span></li>
+      <li><div><b>NEET mock moved to 1 November</b><small>Draft</small></div><span class="tag amb">Draft</span></li>
+    </ul>
+    <a href="404.html" class="btn btn-sm" style="margin-top:1.2rem">Write announcement</a></div>
+</section>
+</main>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>

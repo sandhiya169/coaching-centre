@@ -88,7 +88,7 @@
     const heroTl = gsap.timeline({ paused: true, defaults: { ease: 'power4.out' } })
       .from('.hero-tags', { opacity: 0, y: 20, duration: .6 })
       .from('.bl-hero h1 i', { yPercent: 110, duration: 1, stagger: .12 }, '-=.3')
-      .from('.bl-lead,.cta-row', { opacity: 0, y: 24, stagger: .1, duration: .7 }, '-=.5')
+      .from('.bl-hero .bl-lead,.cta-row', { opacity: 0, y: 24, stagger: .1, duration: .7 }, '-=.5')
       .from('.bl-topics > *', { opacity: 0, y: 16, stagger: .05, duration: .5 }, '-=.45')
       .from('.bl-hero-img', { clipPath: 'inset(100% 0 0 0)', duration: 1.2 }, 0.3)
       .from('.bl-note', { opacity: 0, y: 18, scale: .94, duration: .6, clearProps: 'transform,opacity' }, '-=.7')

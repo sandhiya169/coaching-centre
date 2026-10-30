@@ -1,8 +1,4 @@
 
-body.auth-body {
-  overflow-x: clip;
-}
-
 @media(min-width: 821px) {
   body.auth-body {
     overflow: hidden;
@@ -333,15 +329,17 @@ input[aria-invalid=true] {
 
 @media(max-width:820px) {
   body.auth-body {
+    overflow-x: hidden;
     overflow-y: auto;
     height: auto;
+    min-height: 100%;
   }
 
   .auth {
     grid-template-columns: 1fr;
-    height: auto;
-    min-height: 100vh;
-    overflow: visible;
+    height: auto !important;
+    min-height: unset;
+    overflow: visible !important;
   }
 
   .auth-art {
@@ -349,8 +347,11 @@ input[aria-invalid=true] {
   }
 
   .auth-main {
-    height: auto;
-    overflow-y: visible;
+    height: auto !important;
+    min-height: 100svh;
+    overflow: visible !important;
+    overscroll-behavior: auto;
+    -webkit-overflow-scrolling: auto;
     padding-bottom: 3rem;
   }
 

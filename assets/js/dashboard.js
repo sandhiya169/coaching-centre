@@ -12,7 +12,8 @@
   const start = location.hash.slice(1);
   // Clean address bar: no ?email=... or #tab after the page name
   if (location.search || location.hash) history.replaceState(null, '', location.pathname);
-  $('#who').textContent = label; $('#who').title = label;
+  $('#who-side').textContent = label; $('#who-side').title = label;
+  const whoTop = $('#who'); if (whoTop) { whoTop.textContent = label; whoTop.title = label; }
 
   const btns = $$('.menu button'), panels = $$('.panel'), side = $('#side'), shade = $('#shade'), burger = $('#dburger');
   const set = o => {
